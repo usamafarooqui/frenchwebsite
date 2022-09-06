@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 50px;
+
+        }
+
+        .cir {
+            font-size: 25px;
+        }
+
+        .heading .card {
+            border: 2px solid rgb(167, 165, 165);
+            border-radius: 10px;
+            height: 250px;
+        }
+
+        .sur {
+            font-size: 22px;
+        }
+
+        .cusCard {
+            align-items: center;
+            margin: 20px;
+        }
+
+        .mainico {
+            display: flex;
+
+            margin-top: 20px;
+
+        }
+
+        .subico {
+            margin: 10px;
+        }
+
+        .xp {
+            font-size: 22px;
+
+        }
+
+        .fa-circle {
+            color: grey;
+        }
+
+        .fa-check-circle {
+            color: orange;
+        }
+
+        .fa-bolt {
+            color: orange;
+        }
+
+        .fa-calendar-check {
+            color: orange;
+        }
+
+        /* card 2 */
+
+        .second {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .second .cusCard {
+            border: 2px solid rgb(167, 165, 165);
+            border-radius: 10px;
+        }
+
+        .fa-clock {
+            color: rgb(0, 183, 255);
+        }
+
+
+        /* card 3 */
+
+        .third .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .smCard {
+            margin: 20px 40px;
+            border: 2px solid grey;
+            padding: 40px 70px;
+            border-radius: 30px;
+
+        }
+
+        .bgCard {
+
+            padding: 50px 70px;
+        }
+
+        /* 3 cards ki styling */
+
+        .fa-autoprefixer {
+            color: rgb(0, 153, 255);
+        }
+
+        .fa-comment-alt {
+            color: purple;
+        }
+
+        .fa-award {
+            color: orange;
+        }
+
+        .cardTitle {
+            font-weight: 400;
+            font-size: 20px;
+            color: grey;
+        }
+
+        .cusIco {
+            font-size: 30px;
+        }
+
+
+        /* responsiveness  */
+
+        @media only screen and (max-width: 600px) {
+            .last img {
+                width: 300px;
+                height: auto;
+            }
+
+            .card {
+                width: 15rem;
+            }
+
+            .heading {
+                /* margin-left: 30px;
+      margin-right: 20px; */
+                /* width: 150px; */
+
+                margin: 10px 20px;
+            }
+
+        }
+
+        @media only screen and (max-width: 410px) {
+            .last img {
+                width: 200px;
+                height: auto;
+            }
+
+            .heading {
+                margin-left: 100px;
+                border: none;
+            }
+
+            .heading .cusCard {
+
+                width: 15rem;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                < </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fas fa-download"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fas fa-trash-alt"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="far fa-envelope"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+        </div>
+    </nav>
+
+
+    <section class="heading">
+        <h3>Ton bilan hebdomadaire</h3>
+        <div class="card cusCard" style="width: 25rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <center>Jours D'ACTIVITÉ </center> <br>
+                    <center><i class="fas fa-calendar-check"></i> <b> <span class="sur"> 1 sur 7 </span></b> </center>
+                </li>
+                <li class="list-group-item">
+                    <div class="mainico">
+
+                        <div class="subico"> &nbsp S<br><i class="far fa-circle cir"></i>
+                        </div>
+                        <div class="subico">&nbspM<br><i class="far fa-circle cir"></i></div>
+                        <div class="subico">&nbsp L<br><i class="far fa-circle cir"></i></div>
+                        <div class="subico">&nbspM<br><i class="far fa-circle cir"></i></div>
+                        <div class="subico">&nbspM<br><i class="far fa-circle cir"></i></div>
+                        <div class="subico">&nbsp J<br><i class="fas fa-check-circle cir"></i></div>
+                        <div class="subico">&nbspV<br><i class="far fa-circle cir"></i></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="heading ">
+        <div class="card cusCard rescard" style="width: 25rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item xp"> <br>
+                    <center> XP GAGNÉS <br> <i class="fas fa-bolt"></i> &nbsp 40 </center>
+                </li>
+                <li class="list-group-item"><img src="images/pic1.jpeg" class="resimg" width="200px" height="114px"
+                        alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <section class="second">
+        <div class="card cusCard" style="width: 25rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div>
+                        <h4>TEMPS D'ACTIVITÉ</h4>
+                        <center>
+                            <div>
+                                <i class="far fa-clock"></i> 0 h 0 min
+                                <p><b>40 min de plus</b> que la samina</p>
+                            </div>
+                        </center>
+                    </div>
+                </li>
+                <li class="list-group-item"><img src="images/pic4.jpeg" width="200px" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <section class="second">
+        <div class="card cusCard" style="width: 25rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div>
+                        <h4>TEMPS D'ACTIVITÉ</h4>
+                        <center>
+                            <div>
+                                <i class="far fa-clock"></i> 0 h 4 min
+                                <p><b>40 min de plus</b> que la samina</p>
+                            </div>
+                        </center>
+                    </div>
+                </li>
+                <li class="list-group-item"><img src="images/pic2.jpeg" width="200px" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="third">
+        <div class="container">
+            <div class="smCard"><span class="cardTitle"> MOTS </span> <br> <span class="cardTitle">RÉVISÉS </span> <br>
+                <br> <i class="fab fa-autoprefixer cusIco"> <b> 0 </b> </i>
+            </div>
+            <div class="smCard bgCard"> <span class="cardTitle">EXPRESSIO</span> <br> <span class="cardTitle"> NS
+                </span><br> <span class="cardTitle"> RÉVISÉES</span> <br><br> &nbsp &nbsp <i
+                    class="fas fa-comment-alt cusIco"> <b> 0
+                    </b> </i></div>
+            <div class="smCard"> <span class="cardTitle">LECONS </span> <br><span class="cardTitle">TERMINEÉS </span>
+                <br> <br>&nbsp &nbsp &nbsp <i class="fas fa-award cusIco"> <b> 0 </b> </i>
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <center> <img src="images/pic3.jpeg" alt=""></center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
